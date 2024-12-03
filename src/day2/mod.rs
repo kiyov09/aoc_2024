@@ -6,6 +6,7 @@ fn is_valid_delta(a: i32) -> bool {
 
 const PATH: &str = "./inputs/day2/input.txt";
 
+/// Check if a line is safe, according to the rules described in the problem
 fn is_it_safe(line: &[i32]) -> bool {
     let mut ordering = None;
 

@@ -47,19 +47,25 @@ pub fn task_2() {
 
     let (mut left, mut right) = (vec![], HashMap::new());
 
+    // Process each line, turn it into a tuple of numbers
     input.lines().map(process_line).for_each(|(l, r)| {
+        // first one goes into a vec
         left.push(l);
+        // second one goes into a hashmap to count the number of times it appears
         right
             .entry(r)
             .and_modify(|v: &mut u32| *v += 1)
             .or_insert(1);
     });
 
+    // multiply each number in the left vec by the number of times it appears in the right hashmap
+    // and sum up the results
     let answer: u32 = left
         .iter()
         .map(|k| right.get(k).map(|v| k * v).unwrap_or(0))
         .sum();
 
+    // this line was added after I got the right answer
     assert_eq!(22014209, answer);
 
     println!("{answer}")
