@@ -2,6 +2,7 @@ use aoc_2024::day1;
 use aoc_2024::day2;
 use aoc_2024::day3;
 use aoc_2024::day4;
+use aoc_2024::day5;
 
 fn main() {
     day1::task_1();
@@ -15,4 +16,7 @@ fn main() {
 
     day4::task_1();
     day4::task_2();
+
+    day5::task_1();
+    day5::task_2();
 }
