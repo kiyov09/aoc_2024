@@ -1,7 +1,4 @@
-use std::{
-    collections::{HashMap, HashSet, VecDeque},
-    fs::read_to_string,
-};
+use std::{collections::HashMap, fs::read_to_string};
 
 const PATH: &str = "./inputs/day5/input.txt";
 
