@@ -1,5 +1,6 @@
 #![allow(unused)]
 use aoc_2024::day1;
+use aoc_2024::day10;
 use aoc_2024::day2;
 use aoc_2024::day3;
 use aoc_2024::day4;
@@ -36,4 +37,7 @@ fn main() {
 
     day9::task_1();
     day9::task_2();
+
+    day10::task_1();
+    day10::task_2();
 }
